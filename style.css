@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: whitesmoke;
+}
+body {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #A07254, #886046, #755239);
+  padding: 0 2%;
+}
+img {
+  display: block;
+  width: 100%;
+}
+header .top-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.top-menu ul {
+  display: flex;
+  align-items: center;
+}
+.top-menu ul li a {
+  display: block;
+  padding: .5rem;
+}
+.top-menu ul li a:hover {
+  background-color: #252525;
+  transition: background-color 120ms ease;
+}
+.top-menu .logo-text {
+  padding: .5rem;
+}
+.wrapper {
+  display: grid;
+  grid-template-areas: "cont-1 cont-2 cont-2"
+                       "cont-3 cont-3 cont-3";
+}
+.wrapper .cont-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cont-1 {
+  grid-area: cont-1;
+  padding-left: 10%;
+}
+.cont-2 {
+  grid-area: cont-2;
+}
+.cont-3 {
+  grid-area: cont-3;
+  margin-top: 1rem;
+}
+.card-cont ul .card {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  background-color: #623F29;
+  border-radius: 8px;
+  width: 48%;
+  padding: 1.5rem;
+  margin: 0 1rem;
+}
+.card header {
+  text-align: center;
+}
+.card header .icon {
+  width: 50%;
+  margin: 1rem auto;
+}
+.card p.description {
+  text-indent: 6%;
+  word-break: break-all;
+  letter-spacing: 1px;
+  margin: 1rem 0;
+}
+.card button {
+  border: 1px solid white;
+  border-radius: 4px;
+  background: transparent;
+  padding: .8rem;
+  font-size: 1rem;
+}
+.card button:hover {
+  background-color: #A07254;
+  transition: background-color 120ms ease;
+}
